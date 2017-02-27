@@ -5,12 +5,12 @@ defmodule Atoms do
 
   koan "Atoms are sort of like strings" do
     adam = :human
-    assert adam == ___
+    assert adam == :human
   end
 
   koan "Strings can be converted to atoms, and vice versa" do
-    assert String.to_atom("atomized") == ___
-    assert Atom.to_string(:stringified) == ___
+    assert String.to_atom("atomized") == :atomized
+    assert Atom.to_string(:stringified) == "stringified"
   end
 
   koan "It is surprising to find out that booleans are atoms" do
